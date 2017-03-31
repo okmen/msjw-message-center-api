@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>cn.new12308.services</groupId>
+	<groupId>cn.chudaokeji.services</groupId>
 	<artifactId>account-center-api</artifactId>
 	<version>${publish.version}</version>
 	<name>account-center-api</name>
@@ -85,7 +85,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>cn.new12308.lib</groupId>
+			<groupId>cn.chudaokeji.lib</groupId>
 			<artifactId>common-sdk</artifactId>
 			<version>${sdk.version}</version>
 			<optional>true</optional>
