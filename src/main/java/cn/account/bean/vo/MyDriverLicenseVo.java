@@ -5,11 +5,29 @@ package cn.account.bean.vo;
  *
  */
 public class MyDriverLicenseVo {
+	/**
+	 * 档案编号
+	 */
 	private String fileNumber;
+	/**
+	 * 当前状态
+	 */
 	private String status;
+	/**
+	 * 可用计分
+	 */
 	private String availableScore;
+	/**
+	 * 体检日期
+	 */
 	private String physicalExaminationDate;
+	/**
+	 * 有效日期
+	 */
 	private String effectiveDate;
+	/**
+	 * 是否已领取电子驾照 0-是，1-否
+	 */
 	private Integer isReceive;
 	
 	public String getFileNumber() {

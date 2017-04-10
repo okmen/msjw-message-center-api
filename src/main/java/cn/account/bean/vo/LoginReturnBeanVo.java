@@ -6,9 +6,13 @@ package cn.account.bean.vo;
  *
  */
 public class LoginReturnBeanVo {
-	//认证基本信息
+	/**
+	 * 认证基本信息
+	 */
 	private AuthenticationBasicInformationVo authenticationBasicInformation;
-	//认证基本信息
+	/**
+	 * 认证基本信息
+	 */
 	private IdentityVerificationAuditResultsVo identityVerificationAuditResults;
 	public AuthenticationBasicInformationVo getAuthenticationBasicInformation() {
 		return authenticationBasicInformation;
