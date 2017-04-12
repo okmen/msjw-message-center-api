@@ -1,11 +1,17 @@
 package cn.account.bean.vo;
 
+import java.io.Serializable;
+
 /**
  * 登录返回的对象
  * @author Mbenben
  *
  */
-public class LoginReturnBeanVo {
+public class LoginReturnBeanVo implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/**
 	 * 认证基本信息
 	 */

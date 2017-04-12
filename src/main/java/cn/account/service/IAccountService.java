@@ -1,13 +1,19 @@
 package cn.account.service;
 
 import java.util.List;
-import java.util.Map;
 
-import cn.account.bean.DeviceBean;
-import cn.account.bean.Token;
-import cn.account.bean.UserOpenidBean;
-import cn.account.bean.UserRegInfo;
 import cn.account.bean.WechatUserInfoBean;
+import cn.account.bean.vo.BindTheVehicleVo;
+import cn.account.bean.vo.DriverLicenseInformationSheetVo;
+import cn.account.bean.vo.DrivingLicenseVo;
+import cn.account.bean.vo.ElectronicDriverLicenseVo;
+import cn.account.bean.vo.LoginReturnBeanVo;
+import cn.account.bean.vo.MotorVehicleInformationSheetVo;
+import cn.account.bean.vo.MyDriverLicenseVo;
+import cn.account.bean.vo.queryclassservice.CertificationProgressQueryVo;
+import cn.account.bean.vo.queryclassservice.DriverLicenseBusinessVo;
+import cn.account.bean.vo.queryclassservice.MakeAnAppointmentVo;
+import cn.account.bean.vo.queryclassservice.MotorVehicleBusinessVo;
 
 /**
  * @author suntao
@@ -34,9 +40,105 @@ public interface IAccountService {
 	 * @return
 	 */
 	List<WechatUserInfoBean> getAllWechatUserInfoBeanList();
-
-
-
+	/**
+	 * 登录
+	 * @return
+	 * @throws Exception 
+	 */
+	public LoginReturnBeanVo login(String loginName,String password) throws Exception;
+	/**
+	 * 获取机动车信息单
+	 * @param identityCard 身份证号
+	 * @return
+	 */
+	public MotorVehicleInformationSheetVo getMotorVehicleInformationSheet(String identityCard);
+	/**
+     * 提交机动车信息单
+     * @param userName 姓名
+     * @param identityCard 身份证号
+     * @param mobilephone 联系电话 
+     * @param provinceAbbreviation 车牌核发省简称 例如：粤
+     * @param numberPlateNumber 号牌号码 例如：B701NR
+     * @param plateType 车辆类型 例如:小型汽车
+     */
+	public void commitMotorVehicleInformationSheet(String userName,String identityCard,
+    		String mobilephone,String provinceAbbreviation,String numberPlateNumber, String plateType);
+	/**
+	 * 获取驾驶证信息单
+	 * @param identityCard 身份证号
+	 * @return
+	 */
+	public DriverLicenseInformationSheetVo getDriverLicenseInformationSheet(String identityCard);
+	/**
+	 * 提交驾驶证信息单
+	 * @param userName 姓名
+	 * @param identityCard 身份证号
+	 * @param mobilephone 联系电话
+	 * @return
+	 */
+	public DriverLicenseInformationSheetVo commitDriverLicenseInformationSheet(String userName,String identityCard,String mobilephone);
+	/**
+	 * 用户中心-查询类服务-预约查询-机动车业务/驾驶证业务
+	 * @param businessType 业务类型	1-机动车业务、2-驾驶证业务
+	 * @param reservationNumber 预约编号
+	 * @param identityCard 身份证号
+	 * @return
+	 */
+	public MakeAnAppointmentVo getMakeAnAppointment(int businessType,String reservationNumber,String identityCard);
+	/**
+	 * 用户中心-查询类服务-预约取消-机动车业务/驾驶证业务
+	 * @param businessType
+	 * @param reservationNumber
+	 * @param identityCard
+	 */
+	public void bookingCancellation(int businessType,String reservationNumber,String identityCard);
+	/**
+	 * 用户中心-查询类服务-认证进度查询(身份认证审核/自然人认证/公车注册/车辆绑定/驾驶证绑定)
+	 * @param businessType
+	 * @param identityCard
+	 * @param serialNumber
+	 * @param agencyCode
+	 * @return
+	 */
+	public CertificationProgressQueryVo getCertificationProgressQuery(int businessType,String identityCard,String serialNumber,String agencyCode);
+	/**
+	 * 用户中心-查询类服务-业务办理进度查询-驾驶证业务
+	 * @param identityCard 身份证号
+	 * @return
+	 */
+	public List<DriverLicenseBusinessVo> getDriverLicenseBusiness(String identityCard);
+	/**
+	 * 用户中心-查询类服务-业务办理进度查询-机动车业务
+	 * @param identityCard 身份证号
+	 * @return
+	 */
+	public List<MotorVehicleBusinessVo> getMotorVehicleBusiness(String identityCard);
+	/**
+	 * 用户中心-电子驾驶证
+	 * @param driverLicenseNumber 驾驶证号
+	 * @param userName 姓名
+	 * @param mobileNumber 申请手机号码
+	 * @return
+	 */
+	public ElectronicDriverLicenseVo getElectronicDriverLicense(String driverLicenseNumber,String userName,String mobileNumber);
+	/**
+	 * 用户中心-电子行驶证
+	 * @param numberPlatenumber 号牌号码
+	 * @param plateType 号牌种类
+	 * @param mobileNumber 申请手机号码
+	 * @return
+	 */
+	public DrivingLicenseVo getDrivingLicense(String numberPlatenumber,String plateType,String mobileNumber);
+	/**
+	 * 用户中心-我的驾驶证
+	 * @param identityCard 身份证号
+	 */
+	public MyDriverLicenseVo getMyDriverLicense(String identityCard);
+	/**
+	 * 用户中心-查询已绑车辆
+	 * @param identityCard 身份证号
+	 */
+	public List<BindTheVehicleVo> getBndTheVehicles(String identityCard);
 //	/**
 //	 * 添加新用户
 //	 * 

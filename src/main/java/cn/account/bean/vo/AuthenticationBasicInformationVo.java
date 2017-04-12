@@ -1,10 +1,17 @@
 package cn.account.bean.vo;
+
+import java.io.Serializable;
+
 /**
  * 认证基本信息
  * @author Mbenben
  *
  */
-public class AuthenticationBasicInformationVo {
+public class AuthenticationBasicInformationVo  implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/**
 	 * 真实姓名
 	 */

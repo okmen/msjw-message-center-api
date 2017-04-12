@@ -1,10 +1,17 @@
 package cn.account.bean.vo;
+
+import java.io.Serializable;
+
 /**
  * 身份认证审核结果
  * @author Mbenben
  *
  */
-public class IdentityVerificationAuditResultsVo {
+public class IdentityVerificationAuditResultsVo  implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/**
 	 * 状态  0-待审核、1-审核通过、tb-退办
 	 */
