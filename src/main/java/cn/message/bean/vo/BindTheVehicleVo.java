@@ -1,4 +1,4 @@
-package cn.account.bean.vo;
+package cn.message.bean.vo;
 /**
  * 已绑定车辆
  * @author Mbenben

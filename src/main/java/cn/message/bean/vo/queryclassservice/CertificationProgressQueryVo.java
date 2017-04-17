@@ -1,4 +1,4 @@
-package cn.account.bean.vo.queryclassservice;
+package cn.message.bean.vo.queryclassservice;
 
 import java.util.List;
 

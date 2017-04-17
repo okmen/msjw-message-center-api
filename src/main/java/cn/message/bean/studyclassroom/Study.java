@@ -1,4 +1,4 @@
-package cn.account.bean.studyclassroom;
+package cn.message.bean.studyclassroom;
 
 import java.io.Serializable;
 import java.util.List;

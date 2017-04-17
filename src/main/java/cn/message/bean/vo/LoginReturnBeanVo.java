@@ -1,4 +1,4 @@
-package cn.account.bean.vo;
+package cn.message.bean.vo;
 
 import java.io.Serializable;
 

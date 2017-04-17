@@ -1,10 +1,10 @@
-package cn.account.bean.vo.queryclassservice;
+package cn.message.bean.vo.queryclassservice;
 /**
- * 用户中心-查询类服务-业务办理进度查询-机动车业务
+ * 用户中心-查询类服务-业务办理进度查询-驾驶证业务
  * @author Mbenben
  *
  */
-public class MotorVehicleBusinessVo {
+public class DriverLicenseBusinessVo {
 	/**
 	 * 姓名
 	 */
@@ -14,9 +14,9 @@ public class MotorVehicleBusinessVo {
 	 */
 	private String identityCard;
 	/**
-	 * 申请时间
+	 * 手机号
 	 */
-	private String applicationTime;
+	private String mobilephone;
 	/**
 	 * 牌号号码
 	 */
@@ -38,9 +38,10 @@ public class MotorVehicleBusinessVo {
 	 */
 	private String businessName;
 	/**
-	 * 业务名称
+	 * 办理状态
 	 */
 	private String handleTheState;
+	
 	public String getUserName() {
 		return userName;
 	}
@@ -53,11 +54,11 @@ public class MotorVehicleBusinessVo {
 	public void setIdentityCard(String identityCard) {
 		this.identityCard = identityCard;
 	}
-	public String getApplicationTime() {
-		return applicationTime;
+	public String getMobilephone() {
+		return mobilephone;
 	}
-	public void setApplicationTime(String applicationTime) {
-		this.applicationTime = applicationTime;
+	public void setMobilephone(String mobilephone) {
+		this.mobilephone = mobilephone;
 	}
 	public String getGradeNumber() {
 		return gradeNumber;
@@ -95,5 +96,7 @@ public class MotorVehicleBusinessVo {
 	public void setHandleTheState(String handleTheState) {
 		this.handleTheState = handleTheState;
 	}
+	
+	
 	
 }

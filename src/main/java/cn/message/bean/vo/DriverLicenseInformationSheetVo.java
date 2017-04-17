@@ -1,4 +1,4 @@
-package cn.account.bean.vo;
+package cn.message.bean.vo;
 /**
  * 驾驶证信息单
  * @author Mbenben

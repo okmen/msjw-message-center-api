@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.chudaokeji.services</groupId>
-	<artifactId>account-center-api</artifactId>
+	<artifactId>message-center-api</artifactId>
 	<version>${publish.version}</version>
-	<name>account-center-api</name>
+	<name>message-center-api</name>
 
 	<properties>
 		<publish.version>1.0.0-SNAPSHOT</publish.version>
@@ -14,7 +14,7 @@
 	</properties>
 
 	<build>
-		<finalName>account-center-api</finalName>
+		<finalName>message-center-api</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

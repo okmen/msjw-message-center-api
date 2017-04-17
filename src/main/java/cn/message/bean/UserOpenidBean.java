@@ -1,4 +1,4 @@
-package cn.account.bean;
+package cn.message.bean;
 
 import java.io.Serializable;
 
