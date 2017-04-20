@@ -1,8 +1,9 @@
 package cn.message.bean;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class TemplateDataModel {
+public class TemplateDataModel implements Serializable {
 	private String touser;
 	private String template_id;
 	private String url;
@@ -32,7 +33,7 @@ public class TemplateDataModel {
 		this.data = data;
 	}
 	
-	public class Property{
+	public class Property implements Serializable{
 		private String value;
 		private String color;
 		public String getValue() {
@@ -47,5 +48,11 @@ public class TemplateDataModel {
 		public void setColor(String color) {
 			this.color = color;
 		}
+		public Property(String value, String color) {
+			super();
+			this.value = value;
+			this.color = color;
+		}
+		public Property(){}
 	}
 }	
