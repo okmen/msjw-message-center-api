@@ -54,5 +54,15 @@ public class TemplateDataModel implements Serializable {
 			this.color = color;
 		}
 		public Property(){}
+		@Override
+		public String toString() {
+			return "Property [value=" + value + ", color=" + color + "]";
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "TemplateDataModel [touser=" + touser + ", template_id="
+				+ template_id + ", url=" + url + ", data=" + data + "]";
 	}
 }	

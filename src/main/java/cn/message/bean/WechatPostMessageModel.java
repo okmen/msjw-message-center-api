@@ -42,4 +42,10 @@ public class WechatPostMessageModel implements Serializable{
 		MsgType = msgType;
 		Event = event;
 	}
+	@Override
+	public String toString() {
+		return "WechatPostMessageModel [fromUserName=" + fromUserName
+				+ ", ToUserName=" + ToUserName + ", MsgType=" + MsgType
+				+ ", Event=" + Event + "]";
+	}
 }	

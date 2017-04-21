@@ -28,4 +28,9 @@ public class WechatUserInfo implements Serializable{
 	public void setHeadUrlImg(String headUrlImg) {
 		this.headUrlImg = headUrlImg;
 	}
+	@Override
+	public String toString() {
+		return "WechatUserInfo [openId=" + openId + ", nickName=" + nickName
+				+ ", headUrlImg=" + headUrlImg + "]";
+	}
 }
