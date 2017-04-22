@@ -25,7 +25,13 @@ public interface IWechatService {
 	 * 创建菜单
 	 * @return
 	 */
-	String createMenu();
+	String createMenu(String json);
+	
+	/**
+	 * 查询菜单
+	 * @return
+	 */
+	String queryMenu();
 	
 	/**
 	 * 微信授权回调
