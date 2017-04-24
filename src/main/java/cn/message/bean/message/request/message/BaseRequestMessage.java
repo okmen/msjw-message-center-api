@@ -1,6 +1,6 @@
 package cn.message.bean.message.request.message;
 
-import cn.message.bean.message.request.IMessage;
+import cn.message.bean.message.IMessage;
 
 /**
  * 接收消息
@@ -37,7 +37,7 @@ public abstract class BaseRequestMessage implements IMessage{
     private String fromUserName;  
     private long createTime;  
     private long msgId;
-    protected String msgType;
+    private String msgType;
 	public String getToUserName() {
 		return toUserName;
 	}
@@ -67,9 +67,10 @@ public abstract class BaseRequestMessage implements IMessage{
 	}
 	
 	public BaseRequestMessage(String toUserName, String fromUserName,
-			long createTime) {
+			long createTime,String msgType) {
 		this.toUserName = toUserName;
 		this.fromUserName = fromUserName;
 		this.createTime = createTime;
+		this.msgType = msgType;
 	}
 }

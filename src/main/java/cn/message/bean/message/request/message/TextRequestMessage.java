@@ -14,9 +14,8 @@ public class TextRequestMessage extends BaseRequestMessage {
 	}
     
 	public TextRequestMessage(String toUserName,String fromUserName,long createTime,String content) {
-		super(toUserName,fromUserName,createTime);
+		super(toUserName,fromUserName,createTime,MESSAGE_TYPE_TEXT);
 		this.content = content;
-		msgType = MESSAGE_TYPE_TEXT;  
 	}
 	
 	@Override

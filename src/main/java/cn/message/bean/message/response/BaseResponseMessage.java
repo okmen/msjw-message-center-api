@@ -1,6 +1,6 @@
 package cn.message.bean.message.response;
 
-import cn.message.bean.message.request.IMessage;
+import cn.message.bean.message.IMessage;
 
 /**
  * 回复消息
@@ -26,7 +26,7 @@ public abstract class BaseResponseMessage implements IMessage{
     private long createTime; 
     // 位0x0001被标志时，星标刚收到的消息  
     private int funcFlag;
-    protected String msgType;
+    private String msgType;
 	public String getToUserName() {
 		return toUserName;
 	}
@@ -64,10 +64,11 @@ public abstract class BaseResponseMessage implements IMessage{
 	}
 	
 	public BaseResponseMessage(String toUserName, String fromUserName,
-			long createTime) {
+			long createTime,String msgType) {
 		this.toUserName = toUserName;
 		this.fromUserName = fromUserName;
 		this.createTime = createTime;
+		this.msgType = msgType;
 	}
 
 	public BaseResponseMessage(){}

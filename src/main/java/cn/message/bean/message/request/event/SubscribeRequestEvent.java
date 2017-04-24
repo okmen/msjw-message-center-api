@@ -4,8 +4,7 @@ public class SubscribeRequestEvent extends BaseRequestEvent {
 
 	public SubscribeRequestEvent(String toUserName, String fromUserName,
 			long createTime) {
-		super(toUserName, fromUserName, createTime);
-		event = REQ_EVENT_TYPE_SUBSCRIBE;
+		super(toUserName, fromUserName, createTime,REQ_EVENT_TYPE_SUBSCRIBE);
 	}
 
 	@Override

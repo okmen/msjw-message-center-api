@@ -3,7 +3,7 @@ import java.util.Map;
 
 import cn.message.bean.WechatPostMessageModel;
 import cn.message.bean.WechatUserInfo;
-import cn.message.bean.message.request.IMessage;
+import cn.message.bean.message.IMessage;
 
 public interface IWechatService {
 	/**

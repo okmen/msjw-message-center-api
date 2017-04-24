@@ -11,7 +11,7 @@ public abstract class BaseRequestEvent implements IEvent {
 	private long createTime;  
 	//事件的消息类型固定为event
 	protected String msgType = MESSAGE_TYPE_EVENT;
-	protected String event;
+	private String event;
 	
 	public String getToUserName() {
 		return toUserName;
@@ -41,9 +41,10 @@ public abstract class BaseRequestEvent implements IEvent {
 		this.event = event;
 	}
 	public BaseRequestEvent(String toUserName, String fromUserName,
-			long createTime) {
+			long createTime,String event) {
 		this.toUserName = toUserName;
 		this.fromUserName = fromUserName;
 		this.createTime = createTime;
+		this.event = event;
 	}
 }

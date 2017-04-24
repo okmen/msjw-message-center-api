@@ -1,5 +1,7 @@
 package cn.message.bean.message.request;
 
+import cn.message.bean.message.IMessage;
+
 public interface IEvent extends IMessage {
 	/**
 	 * 扫描二维码(未关注时扫描,微信会自动关注)/关注事件
