@@ -8,15 +8,7 @@ import cn.message.bean.message.IMessage;
  *
  */
 public abstract class BaseResponseMessage implements IMessage{
-	/**
-	 * 音乐消息
-	 */
-	public static final String RESP_MESSAGE_TYPE_MUSIC = "music";
-	
-	/**
-	 * 图文消息
-	 */
-	public static final String RESP_MESSAGE_TYPE_NEWS = "news";
+
 	
 	// 接收方帐号（收到的OpenID）  
     private String toUserName;  

@@ -19,7 +19,7 @@ public class NewsResponseMessage extends BaseResponseMessage{
 	public NewsResponseMessage(String toUserName, String fromUserName,
 			long createTime, int articleCount,
 			String[] title, String[] description, String[] picUrl, String[] url) {
-		super(toUserName, fromUserName, createTime, RESP_MESSAGE_TYPE_NEWS);
+		super(toUserName, fromUserName, createTime, MESSAGE_TYPE_NEWS);
 		this.articleCount = articleCount;
 		this.title = title;
 		this.description = description;

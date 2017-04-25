@@ -1,6 +1,5 @@
-package cn.message.bean.message.request;
+package cn.message.bean.message;
 
-import cn.message.bean.message.IMessage;
 
 public interface IEvent extends IMessage {
 	/**
