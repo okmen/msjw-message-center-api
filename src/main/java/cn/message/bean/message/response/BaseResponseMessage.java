@@ -55,11 +55,7 @@ public abstract class BaseResponseMessage implements IMessage{
 		return msgType;
 	}
 	
-	public BaseResponseMessage(String toUserName, String fromUserName,
-			long createTime,String msgType) {
-		this.toUserName = toUserName;
-		this.fromUserName = fromUserName;
-		this.createTime = createTime;
+	public BaseResponseMessage(String msgType) {
 		this.msgType = msgType;
 	}
 

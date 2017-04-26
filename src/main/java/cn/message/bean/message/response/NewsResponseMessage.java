@@ -16,10 +16,9 @@ public class NewsResponseMessage extends BaseResponseMessage{
 	//点击图文消息跳转的链接
 	private String [] url;
 	
-	public NewsResponseMessage(String toUserName, String fromUserName,
-			long createTime, int articleCount,
+	public NewsResponseMessage(int articleCount,
 			String[] title, String[] description, String[] picUrl, String[] url) {
-		super(toUserName, fromUserName, createTime, MESSAGE_TYPE_NEWS);
+		super(MESSAGE_TYPE_NEWS);
 		this.articleCount = articleCount;
 		this.title = title;
 		this.description = description;

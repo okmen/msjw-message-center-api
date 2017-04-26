@@ -10,7 +10,9 @@ public class WechatPostMessageModel implements Serializable{
 	//消息类型
 	private String MsgType;
 	//事件类型
-	private String Event;
+	private String event;
+	//事件key
+	private String eventKey;
 	//文本
 	private String content;
 	
@@ -35,10 +37,10 @@ public class WechatPostMessageModel implements Serializable{
 		MsgType = msgType;
 	}
 	public String getEvent() {
-		return Event;
+		return event;
 	}
 	public void setEvent(String event) {
-		Event = event;
+		this.event = event;
 	}
 	public String getContent() {
 		return content;
@@ -52,21 +54,30 @@ public class WechatPostMessageModel implements Serializable{
 	public void setMsgId(String msgId) {
 		this.msgId = msgId;
 	}
+	
+	public String getEventKey() {
+		return eventKey;
+	}
+	
+	public void setEventKey(String eventKey) {
+		this.eventKey = eventKey;
+	}
 	public WechatPostMessageModel(String fromUserName, String toUserName,
-			String msgType, String event, String content, String msgId) {
-		super();
+			String msgType, String event, String content, String msgId,String eventKey) {
 		this.fromUserName = fromUserName;
-		ToUserName = toUserName;
-		MsgType = msgType;
-		Event = event;
+		this.ToUserName = toUserName;
+		this.MsgType = msgType;
+		this.event = event;
 		this.content = content;
 		this.msgId = msgId;
+		this.eventKey = eventKey;
 	}
+	
 	@Override
 	public String toString() {
 		return "WechatPostMessageModel [fromUserName=" + fromUserName
 				+ ", ToUserName=" + ToUserName + ", MsgType=" + MsgType
-				+ ", Event=" + Event + ", content=" + content + ", msgId="
-				+ msgId + "]";
+				+ ", Event=" + event + ", eventKey=" + eventKey + ", content="
+				+ content + ", msgId=" + msgId + "]";
 	}
 }	

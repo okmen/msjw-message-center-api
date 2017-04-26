@@ -15,8 +15,8 @@ public class TextResponseMessage extends BaseResponseMessage{
      * @param createTime
      * @param content
      */
-	public TextResponseMessage(String toUserName,String fromUserName,long createTime,String content) {
-		super(toUserName,fromUserName,createTime,MESSAGE_TYPE_TEXT);
+	public TextResponseMessage(String content) {
+		super(MESSAGE_TYPE_TEXT);
 		this.content = content;
 	}
 	
