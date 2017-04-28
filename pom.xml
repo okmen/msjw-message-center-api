@@ -105,5 +105,11 @@
 			<version>${sdk.version}</version>
 			<optional>true</optional>
 		</dependency>
+		
+		<dependency>
+  			<groupId>com.alipay.api</groupId>
+ 			<artifactId>alipay-sdk</artifactId>
+  			<version>1.0</version>
+		</dependency>
 	</dependencies>
 </project>
