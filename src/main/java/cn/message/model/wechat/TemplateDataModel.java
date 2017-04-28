@@ -1,4 +1,4 @@
-package cn.message.bean;
+package cn.message.model.wechat;
 
 import java.io.Serializable;
 import java.util.Map;

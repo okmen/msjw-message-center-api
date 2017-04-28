@@ -1,5 +1,5 @@
-package cn.message.bean.message.response;
-public class TextResponseMessage extends BaseResponseMessage{
+package cn.message.model.wechat.message.response;
+public class TextMessage extends BaseMessage{
 	
     private String content; 
     public String getContent() {
@@ -15,12 +15,12 @@ public class TextResponseMessage extends BaseResponseMessage{
      * @param createTime
      * @param content
      */
-	public TextResponseMessage(String content) {
+	public TextMessage(String content) {
 		super(MESSAGE_TYPE_TEXT);
 		this.content = content;
 	}
 	
-	public TextResponseMessage(){}
+	public TextMessage(){}
 	
 	@Override
 	public String toXml(){

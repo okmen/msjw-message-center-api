@@ -2,7 +2,7 @@ package cn.message.service;
 
 import java.util.Map;
 
-import cn.message.bean.TemplateDataModel.Property;
+import cn.message.model.wechat.TemplateDataModel.Property;
 
 /**
  * @author gxg

@@ -1,9 +1,9 @@
 package cn.message.service;
 import java.util.Map;
 
-import cn.message.bean.WechatPostMessageModel;
-import cn.message.bean.WechatUserInfo;
-import cn.message.bean.message.IMessage;
+import cn.message.model.wechat.WechatPostMessageModel;
+import cn.message.model.wechat.WechatUserInfo;
+import cn.message.model.wechat.message.IMessage;
 
 public interface IWechatService {
 	/**
@@ -25,7 +25,7 @@ public interface IWechatService {
 	 * 创建菜单
 	 * @return
 	 */
-	String createMenu(String json);
+	String createMenu();
 	
 	/**
 	 * 查询菜单

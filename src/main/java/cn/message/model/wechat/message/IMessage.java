@@ -1,4 +1,4 @@
-package cn.message.bean.message;
+package cn.message.model.wechat.message;
 
 import java.io.Serializable;
 
@@ -52,19 +52,6 @@ public interface IMessage extends Serializable {
 	 * 图文消息
 	 */
 	public static final String MESSAGE_TYPE_NEWS = "news";
-	
-	
-	public static final String KEYWORD_SZ = "深圳";
-	public static final String KEYWORD_SZJJ = "深圳交警";
-	public static final String KEYWORD_XJYH = "星级用户";
-	public static final String KEYWORD_TX = "腾讯";
-	
-	public static final String KEYWORD_HW= "华为";
-	public static final String KEYWORD_SP = "视频";
-	
-	public static final String KEYWORD_XCDCWJ = "宣传调查问卷";
-	public static final String KEYWORD_DYZP = "打印照片";
-	
 	 //转换成xml返回给微信
     public String toXml();
 }

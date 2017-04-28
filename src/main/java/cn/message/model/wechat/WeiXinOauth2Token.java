@@ -1,4 +1,4 @@
-package cn.message.bean;
+package cn.message.model.wechat;
 
 public class WeiXinOauth2Token {
 	private String accessToken;

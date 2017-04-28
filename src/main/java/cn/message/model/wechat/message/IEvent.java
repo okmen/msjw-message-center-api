@@ -1,4 +1,4 @@
-package cn.message.bean.message;
+package cn.message.model.wechat.message;
 
 
 public interface IEvent extends IMessage {
@@ -31,14 +31,4 @@ public interface IEvent extends IMessage {
 	 * 用户点击自定义菜单跳转
 	 */
 	public static final String EVENT_TYPE_VIEW = "VIEW";
-	
-	/**
-	 * 便民信息
-	 */
-	public static final String EVENT_KEY_CONVENIENCE_INFOMATION = "convenience_information";
-	
-	/**
-	 * 办事指南
-	 */
-	public static final String EVENT_KEY_SERVICE_GUIDE = "service_guide";
 }

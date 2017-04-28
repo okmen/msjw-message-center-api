@@ -1,13 +1,13 @@
-package cn.message.bean.message.response;
+package cn.message.model.wechat.message.response;
 
-import cn.message.bean.message.IMessage;
+import cn.message.model.wechat.message.IMessage;
 
 /**
  * 回复消息
  * @author gaoxigang
  *
  */
-public abstract class BaseResponseMessage implements IMessage{
+public abstract class BaseMessage implements IMessage{
 
 	
 	// 接收方帐号（收到的OpenID）  
@@ -55,9 +55,9 @@ public abstract class BaseResponseMessage implements IMessage{
 		return msgType;
 	}
 	
-	public BaseResponseMessage(String msgType) {
+	public BaseMessage(String msgType) {
 		this.msgType = msgType;
 	}
 
-	public BaseResponseMessage(){}
+	public BaseMessage(){}
 }

@@ -1,6 +1,6 @@
-package cn.message.bean.message.response;
+package cn.message.model.wechat.message.response;
 
-public class NewsResponseMessage extends BaseResponseMessage{
+public class NewsMessage extends BaseMessage{
 	//图文消息个数，限制为10条以内
 	private int articleCount;
 	
@@ -16,7 +16,7 @@ public class NewsResponseMessage extends BaseResponseMessage{
 	//点击图文消息跳转的链接
 	private String [] url;
 	
-	public NewsResponseMessage(int articleCount,
+	public NewsMessage(int articleCount,
 			String[] title, String[] description, String[] picUrl, String[] url) {
 		super(MESSAGE_TYPE_NEWS);
 		this.articleCount = articleCount;
