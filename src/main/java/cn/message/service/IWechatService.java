@@ -47,4 +47,11 @@ public interface IWechatService {
 	 * @return
 	 */
 	Map<String, Object> sdkConfig(String url);
+	
+	/**
+	 * 获取accessToken
+	 * @param temp
+	 * @return
+	 */
+	String queryAccessToken(String temp);
 }
