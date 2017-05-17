@@ -53,5 +53,12 @@ public interface IWechatService {
 	 * @param temp
 	 * @return
 	 */
-	String queryAccessToken(String temp);
+	String queryAccessToken();
+	
+	/**
+	 * 获取accessToken
+	 * @param temp
+	 * @return
+	 */
+	String createAccessToken();
 }
