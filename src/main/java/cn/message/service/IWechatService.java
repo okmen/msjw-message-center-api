@@ -61,4 +61,10 @@ public interface IWechatService {
 	 * @return
 	 */
 	String createAccessToken();
+	
+	/**
+	 * 获取jsapi_ticket
+	 * @return
+	 */
+	String getJsapiTicket();
 }
