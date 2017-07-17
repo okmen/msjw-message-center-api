@@ -17,4 +17,6 @@ public interface ITemplateMessageService {
 	 * @param propertys 属性数组 按模板中的数量依次传递
 	 */
 	boolean sendMessage(String openId,String templateId,String url,Map<String, Property> map);
+	
+	boolean hmdahs() throws Exception;
 }
