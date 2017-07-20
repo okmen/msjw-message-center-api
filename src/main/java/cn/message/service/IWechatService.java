@@ -76,7 +76,7 @@ public interface IWechatService {
 	Map<String, Object> cardConfig(String openId,String cardId);
 	
 	/**
-	 * 激活电子驾驶证
+	 * 激活驾驶证
 	 * @param id
 	 * @param licenseNo
 	 * @param code
@@ -86,10 +86,10 @@ public interface IWechatService {
 	 * @param syrq
 	 * @return
 	 */
-	boolean activeLicense(Integer id,String licenseNo,String code,String cardId,String ljjf,String zjcx,String syrq);
+	boolean activeJsCard(Integer id,String licenseNo,String code,String cardId,String ljjf,String zjcx,String syrq);
 	
 	/**
-	 * 修改电子驾驶证
+	 * 修改驾驶证
 	 * @param code
 	 * @param cardId
 	 * @param ljjf
@@ -97,5 +97,5 @@ public interface IWechatService {
 	 * @param syrq
 	 * @return
 	 */
-	boolean updateLicense(String code,String cardId,String ljjf,String zjcx,String syrq);
+	boolean updateJsCard(String code,String cardId,String ljjf,String zjcx,String syrq);
 }
