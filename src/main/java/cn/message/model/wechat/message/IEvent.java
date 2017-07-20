@@ -31,4 +31,9 @@ public interface IEvent extends IMessage {
 	 * 用户点击自定义菜单跳转
 	 */
 	public static final String EVENT_TYPE_VIEW = "VIEW";
+	
+	/**
+	 * 用户领卡事件
+	 */
+	public static final String EVENT_USER_GET_CARD = "user_get_card";
 }

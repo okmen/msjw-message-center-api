@@ -1,6 +1,5 @@
 package cn.message.service;
 import java.util.Map;
-
 import cn.message.model.wechat.WechatPostMessageModel;
 import cn.message.model.wechat.WechatUserInfo;
 import cn.message.model.wechat.message.IMessage;
@@ -67,4 +66,36 @@ public interface IWechatService {
 	 * @return
 	 */
 	String getJsapiTicket();
+	
+	/**
+	 * 卡券配置
+	 * @param openId
+	 * @param cardId
+	 * @return
+	 */
+	Map<String, Object> cardConfig(String openId,String cardId);
+	
+	/**
+	 * 激活电子驾驶证
+	 * @param id
+	 * @param licenseNo
+	 * @param code
+	 * @param cardId
+	 * @param ljjf
+	 * @param zjcx
+	 * @param syrq
+	 * @return
+	 */
+	boolean activeLicense(Integer id,String licenseNo,String code,String cardId,String ljjf,String zjcx,String syrq);
+	
+	/**
+	 * 修改电子驾驶证
+	 * @param code
+	 * @param cardId
+	 * @param ljjf
+	 * @param zjcx
+	 * @param syrq
+	 * @return
+	 */
+	boolean updateLicense(String code,String cardId,String ljjf,String zjcx,String syrq);
 }
