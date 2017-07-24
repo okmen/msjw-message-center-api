@@ -77,16 +77,13 @@ public interface IWechatService {
 	
 	/**
 	 * 激活驾驶证
-	 * @param id
-	 * @param licenseNo
-	 * @param code
+	 * @param openId
 	 * @param cardId
-	 * @param ljjf
-	 * @param zjcx
-	 * @param syrq
+	 * @param decryptCode
 	 * @return
+	 * @throws Exception
 	 */
-	boolean activeJsCard(Integer id,String licenseNo,String code,String cardId,String ljjf,String zjcx,String syrq);
+	boolean activeJsCard(String openId,String cardId,String decryptCode) throws Exception;
 	
 	/**
 	 * 修改驾驶证
