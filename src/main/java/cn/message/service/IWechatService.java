@@ -95,4 +95,21 @@ public interface IWechatService {
 	 * @return
 	 */
 	boolean updateJsCard(String code,String cardId,String ljjf,String zjcx,String syrq);
+	
+	/**
+	 * 激活行驶证
+	 * @param openId
+	 * @param cardId
+	 * @param decryptCode
+	 * @return
+	 * @throws Exception
+	 */
+	boolean activeXsCard(String openId,String cardId,String decryptCode) throws Exception;
+	
+
+	/**
+	 * 获取api_ticket
+	 * @return
+	 */
+	String getApiTicket();
 }
