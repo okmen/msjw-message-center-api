@@ -13,4 +13,5 @@ public class KeyWord {
 	public static final String KEYWORD_DYZP = "打印照片";
 	
 	public static final String KEYWORD_61HAPPY = "六一快乐";
+	public static final String KEYWORD_BM = "报名";
 }
