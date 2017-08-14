@@ -1,5 +1,7 @@
 package cn.message.service;
 
+import com.alipay.api.AlipayApiException;
+
 import cn.message.model.alipay.AlipayPostMessageModel;
 import cn.message.model.alipay.AlipayUserInfo;
 
@@ -19,4 +21,6 @@ public interface IAlipayService {
 	 * @return
 	 */
 	AlipayUserInfo callback4UserId(String code);
+	
+	public String getAppAuthToken(String appAuthCode) throws AlipayApiException;
 }
