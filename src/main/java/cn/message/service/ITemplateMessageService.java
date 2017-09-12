@@ -26,5 +26,11 @@ public interface ITemplateMessageService {
 	 */
 	public BaseBean sendServiceMessage(MessageChannelModel messageChannelModel);
 	
+	/**
+	 * 获取域名地址
+	 * @return
+	 */
+	public String getTemplateSendUrl();
+	
 	boolean hmdahs() throws Exception;
 }
