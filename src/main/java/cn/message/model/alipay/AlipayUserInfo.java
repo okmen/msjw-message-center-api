@@ -47,6 +47,12 @@ public class AlipayUserInfo implements Serializable {
 	public AlipayUserInfo() {
 		
 	}
+	public AlipayUserInfo(String alipayId, String nickName, String avatar, String mobile) {
+		this.alipayId = alipayId;
+		this.nickName = nickName;
+		this.avatar = avatar;
+		this.mobile = mobile;
+	}
 	public AlipayUserInfo(String alipayId, String nickName, String avatar, String mobile,String shsm) {
 		this.alipayId = alipayId;
 		this.nickName = nickName;
