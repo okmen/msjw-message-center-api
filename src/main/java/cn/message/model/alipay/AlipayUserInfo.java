@@ -5,11 +5,13 @@ import java.io.Serializable;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class AlipayUserInfo implements Serializable {
+	
 	private static final long serialVersionUID = 1L;
 	private String alipayId;
 	private String nickName;
 	private String avatar;
 	private String mobile;
+	private String shsm;
 	
 	public String getAlipayId() {
 		return alipayId;
@@ -36,14 +38,21 @@ public class AlipayUserInfo implements Serializable {
 		this.mobile = mobile;
 	}
 	
+	public String getShsm() {
+		return shsm;
+	}
+	public void setShsm(String shsm) {
+		this.shsm = shsm;
+	}
 	public AlipayUserInfo() {
 		
 	}
-	public AlipayUserInfo(String alipayId, String nickName, String avatar, String mobile) {
+	public AlipayUserInfo(String alipayId, String nickName, String avatar, String mobile,String shsm) {
 		this.alipayId = alipayId;
 		this.nickName = nickName;
 		this.avatar = avatar;
 		this.mobile = mobile;
+		this.shsm = shsm;
 	}
 	@Override 
     public String toString() { 

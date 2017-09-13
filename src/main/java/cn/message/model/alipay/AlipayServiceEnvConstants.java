@@ -71,4 +71,17 @@ public class AlipayServiceEnvConstants {
 
     /**授权访问令牌的授权类型*/
     public static final String GRANT_TYPE        = "authorization_code";
+    
+    
+    //芝麻信用网关地址  测试app统一使用https://zmopenapi.zmxy.com.cn/sandbox.do  这个网关（区别于上线使用的https://zmopenapi.zmxy.com.cn/openapi.do）
+    public static final String ZMXY_GETWAY = "https://zmopenapi.zmxy.com.cn/openapi.do";
+    //芝麻 RSA 公钥
+    public static final String ZMXY_PUBLIC_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCV87gwJevIa+/06CBz6qdaEBYnjAMsOKEWvCYlTNcjrxtZswMmovwTxWU6ZH1lXcXkNQDmn6owZLwaez3VJ/UUVIlgU5di7WuJkVOi+5OSD4Nt+AEMbhiWtf3h+UwAcGhSY+G8z0v0aAyuspWe9AUb5/qfQMAaNuQTn9oc0EfrZwIDAQAB";
+    //商户 RSA 私钥
+    public static final String ZMXY_PRIVATE_KEY = "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAN2BNUztWH7nQgzcl7ty+b50NgTEhFuJzvm8LQ6ZmyGUZGAwL7xdd3BPEj/z077iIqg7vxzwV0bqPMVQQIrkGXjNfyFyqZ/9hEH3wpn8PxupX0BojLZgaM7NtOXklCQ/XB9VQm76sD/hBV/bH/Ko5RPV6/aFVRpRQk9a5OKrQ5ntAgMBAAECgYEAq98qIHq6BB4lHh28jnJ0XteFYsWpfe28cAMXYxDFUpT2HbzGDX7ownhYTM9BKggFpExXynijAB+Y7/GJYzwClkwqgfbmYoW55V1AnH5gfavgPXUOf+asPuBuuSz1gVA40Mzrle9rHvzBsECJg+hZm1GKtS6qYIvBg+IH0Zj2FnECQQDxE4CfNmteemdIA/lepw0ae5mEgyiehsoq3brI32MwfzGIVrTEnca+/ThSORx75zS5t+OR8Dq8AgfLNvQjlgDbAkEA6zeLJtCdApz6kUSCNspReJu3YFeo6oSyMT2JP+s2gfmJysOkAVk41icZh0gn5uM7a/7g+/l8x+KLUvfgTzdG1wJBANUOp14OelXFWAINgRZmDO6azdKPGBcCiSnZTHq68q6put0DxD8AMeYZZO1GDCZ07+Qy4KzZ4w7FvJ2cs6e/qoECQEEev4efedifXT+al/JTUPrzIXGq0zkaQ7seLkFj/VM+osdgIqe8699eM9MgRuvFPU5I4kDgcYtlTO1Lcu57f0ECQQDod00NPsYURtZm89ExwD/20Qp0agU4SHWGmVoO6Z0t/FduaISWEp6M53dpeiQd12bbozUCcVPX8l/aRVSt3Ggd";
+    //数据编码格式
+    public static final String charset = "UTF-8";
+    //芝麻分配给商户的 appId
+    public static final String appId = "1001884";
+    
 }
