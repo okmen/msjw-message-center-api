@@ -52,7 +52,7 @@ public class AlipayServiceEnvConstants {
     public static final String CHARSET           =  "UTF-8";
 
     /**签名类型-视支付宝服务窗要求*/
-    public static final String SIGN_TYPE         = "RSA2";
+    public static final String SIGN_TYPE         = "RSA";
     
     /**开发者账号PID*/
     public static final String PARTNER           = "";

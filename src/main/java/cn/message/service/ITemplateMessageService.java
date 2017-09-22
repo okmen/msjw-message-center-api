@@ -1,7 +1,5 @@
 package cn.message.service;
-
 import java.util.Map;
-
 import cn.message.model.wechat.MessageChannelModel;
 import cn.message.model.wechat.TemplateDataModel.Property;
 import cn.sdk.bean.BaseBean;
@@ -32,5 +30,23 @@ public interface ITemplateMessageService {
 	 */
 	public String getTemplateSendUrl();
 	
-	boolean hmdahs() throws Exception;
+	/**
+	 * 递归取数据
+	 * @throws Exception
+	 */
+	void gainHmdahsData() throws Exception;
+	
+	/**
+	 * 发送hmdahs 表中的数据 微信
+	 * @return
+	 * @throws Exception
+	 */
+	int sendMessageWechat4Timer() throws Exception;
+	
+	/**
+	 * 发送hmdahs 表中的数据 支付宝
+	 * @return
+	 * @throws Exception
+	 */
+	int sendMessageAlipay4Timer() throws Exception;
 }

@@ -59,7 +59,46 @@ public class TemplateDataModel implements Serializable {
 			return "Property [value=" + value + ", color=" + color + "]";
 		}
 	}
-
+	public static class WechatTemlate1{
+		private String first;
+		private String keyword1;
+		private String keyword2;
+		private String remark;
+		public String getFirst() {
+			return first;
+		}
+		public void setFirst(String first) {
+			this.first = first;
+		}
+		public String getKeyword1() {
+			return keyword1;
+		}
+		public void setKeyword1(String keyword1) {
+			this.keyword1 = keyword1;
+		}
+		public String getKeyword2() {
+			return keyword2;
+		}
+		public void setKeyword2(String keyword2) {
+			this.keyword2 = keyword2;
+		}
+		public String getRemark() {
+			return remark;
+		}
+		public void setRemark(String remark) {
+			this.remark = remark;
+		}
+		public WechatTemlate1(){}
+		public WechatTemlate1(String first,String keyword2){
+			this.first = first;
+			this.keyword2 = keyword2;
+		}
+		@Override
+		public String toString() {
+			return "WechatTemlate1 [first=" + first + ", keyword1=" + keyword1
+					+ ", keyword2=" + keyword2 + ", remark=" + remark + "]";
+		}
+	}
 	@Override
 	public String toString() {
 		return "TemplateDataModel [touser=" + touser + ", template_id="
