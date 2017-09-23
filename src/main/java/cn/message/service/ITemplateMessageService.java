@@ -49,4 +49,11 @@ public interface ITemplateMessageService {
 	 * @throws Exception
 	 */
 	int sendMessageAlipay4Timer() throws Exception;
+	
+	/**
+	 * 发送 记录表中失败的记录
+	 * @return
+	 * @throws Exception
+	 */
+	int sendMessage4Fault() throws Exception;
 }
