@@ -112,4 +112,8 @@ public interface IWechatService {
 	 * @return
 	 */
 	String getApiTicket();
+	
+	public void setAuthOpenid(String key);
+	
+	public String getAuthOpenid(String key);
 }
