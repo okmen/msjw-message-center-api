@@ -15,4 +15,5 @@ public class KeyWord {
 	public static final String KEYWORD_61HAPPY = "六一快乐";
 	public static final String KEYWORD_BM = "报名";
 	public static final String KEYWORD_KFR = "开放日";
+	public static final String KEYWORD_QGJTAQR = "全国交通安全日";
 }
