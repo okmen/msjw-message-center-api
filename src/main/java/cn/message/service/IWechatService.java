@@ -1,5 +1,7 @@
 package cn.message.service;
 import java.util.Map;
+
+import cn.message.bean.WxMembercard;
 import cn.message.model.wechat.WechatPostMessageModel;
 import cn.message.model.wechat.WechatUserInfo;
 import cn.message.model.wechat.message.IMessage;
@@ -106,7 +108,21 @@ public interface IWechatService {
 	 */
 	boolean activeXsCard(String openId,String cardId,String decryptCode) throws Exception;
 	
+	/**
+	 * 查询会员卡
+	 * @param openId
+	 * @param cardId
+	 * @return
+	 */
+	WxMembercard selectWxMembercard(String openId,String cardId);
 
+	/**
+	 * 插入会员卡
+	 * @param wxMembercard
+	 * @return
+	 */
+	int insertWxMembercard(WxMembercard wxMembercard);
+	
 	/**
 	 * 获取api_ticket
 	 * @return
