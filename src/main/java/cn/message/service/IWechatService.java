@@ -5,6 +5,7 @@ import cn.message.bean.WxMembercard;
 import cn.message.model.wechat.WechatPostMessageModel;
 import cn.message.model.wechat.WechatUserInfo;
 import cn.message.model.wechat.message.IMessage;
+import cn.sdk.bean.BaseBean;
 
 public interface IWechatService {
 	/**
@@ -106,7 +107,7 @@ public interface IWechatService {
 	 * @return
 	 * @throws Exception
 	 */
-	boolean activeXsCard(String openId,String cardId,String decryptCode) throws Exception;
+	BaseBean activeXsCard(String openId,String cardId,String decryptCode) throws Exception;
 	
 	/**
 	 * 查询会员卡
