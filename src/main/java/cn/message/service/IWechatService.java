@@ -1,13 +1,18 @@
 package cn.message.service;
 import java.util.Map;
 
-import cn.message.bean.WxMembercard;
 import cn.message.model.wechat.WechatPostMessageModel;
 import cn.message.model.wechat.WechatUserInfo;
 import cn.message.model.wechat.message.IMessage;
 import cn.sdk.bean.BaseBean;
 
 public interface IWechatService {
+	/**
+	 * h5域名
+	 * @return
+	 */
+	String getCardH5Domain();
+	
 	/**
 	 * 微信验证服务器
 	 * @param signature
@@ -83,10 +88,13 @@ public interface IWechatService {
 	 * @param openId
 	 * @param cardId
 	 * @param decryptCode
+	 * @param ljjf
+	 * @param syrq
+	 * @param zjcx
 	 * @return
 	 * @throws Exception
 	 */
-	boolean activeJsCard(String openId,String cardId,String decryptCode) throws Exception;
+	BaseBean activeJsCard(String openId,String cardId,String decryptCode,String ljjf,String syrq,String zjcx) throws Exception;
 	
 	/**
 	 * 修改驾驶证
@@ -97,7 +105,7 @@ public interface IWechatService {
 	 * @param syrq
 	 * @return
 	 */
-	boolean updateJsCard(String code,String cardId,String ljjf,String zjcx,String syrq);
+	boolean updateJsCard(String code,String cardId,String ljjf,String syrq,String zjcx);
 	
 	/**
 	 * 激活行驶证
@@ -110,19 +118,11 @@ public interface IWechatService {
 	BaseBean activeXsCard(String openId,String cardId,String decryptCode) throws Exception;
 	
 	/**
-	 * 查询会员卡
+	 * 根据openId获取身份证号
 	 * @param openId
-	 * @param cardId
 	 * @return
 	 */
-	WxMembercard selectWxMembercard(String openId,String cardId);
-
-	/**
-	 * 插入会员卡
-	 * @param wxMembercard
-	 * @return
-	 */
-	int insertWxMembercard(WxMembercard wxMembercard);
+	String queryIdCardByOpenId(String openId);
 	
 	/**
 	 * 获取api_ticket

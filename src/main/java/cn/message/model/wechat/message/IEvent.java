@@ -36,4 +36,9 @@ public interface IEvent extends IMessage {
 	 * 用户领卡事件
 	 */
 	public static final String EVENT_USER_GET_CARD = "user_get_card";
+	
+	/**
+	 * 用户查看卡事件
+	 */
+	public static final String EVENT_USER_VIEW_CARD = "user_view_card";
 }
