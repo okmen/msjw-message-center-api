@@ -84,7 +84,7 @@ public interface IWechatService {
 	Map<String, Object> cardConfig(String openId,String cardId);
 	
 	/**
-	 * 激活驾驶证
+	 * 激活驾驶证（一摇惊喜）
 	 * @param openId
 	 * @param cardId
 	 * @param decryptCode
@@ -94,10 +94,44 @@ public interface IWechatService {
 	 * @return
 	 * @throws Exception
 	 */
-	BaseBean activeJsCard(String openId,String cardId,String decryptCode,String ljjf,String syrq,String zjcx) throws Exception;
+	BaseBean activateJsCardTest(String openId,String cardId,String decryptCode,String ljjf,String syrq,String zjcx) throws Exception;
 	
 	/**
-	 * 修改驾驶证
+	 * 修改驾驶证（一摇惊喜）
+	 * @param code
+	 * @param cardId
+	 * @param ljjf
+	 * @param zjcx
+	 * @param syrq
+	 * @return
+	 */
+	boolean updateJsCardTest(String code,String cardId,String ljjf,String syrq,String zjcx);
+	
+	/**
+	 * 激活行驶证（一摇惊喜）
+	 * @param openId
+	 * @param cardId
+	 * @param decryptCode
+	 * @return
+	 * @throws Exception
+	 */
+	BaseBean activateXsCardTest(String openId,String cardId,String decryptCode) throws Exception;
+	
+	/**
+	 * 激活驾驶证（深圳交警）
+	 * @param openId
+	 * @param cardId
+	 * @param decryptCode
+	 * @param ljjf
+	 * @param syrq
+	 * @param zjcx
+	 * @return
+	 * @throws Exception
+	 */
+	BaseBean activateJsCard(String openId,String cardId,String decryptCode,String ljjf,String syrq,String zjcx) throws Exception;
+	
+	/**
+	 * 修改驾驶证（深圳交警）
 	 * @param code
 	 * @param cardId
 	 * @param ljjf
@@ -108,14 +142,14 @@ public interface IWechatService {
 	boolean updateJsCard(String code,String cardId,String ljjf,String syrq,String zjcx);
 	
 	/**
-	 * 激活行驶证
+	 * 激活行驶证（深圳交警）
 	 * @param openId
 	 * @param cardId
 	 * @param decryptCode
 	 * @return
 	 * @throws Exception
 	 */
-	BaseBean activeXsCard(String openId,String cardId,String decryptCode) throws Exception;
+	BaseBean activateXsCard(String openId,String cardId,String decryptCode) throws Exception;
 	
 	/**
 	 * 根据openId获取身份证号
