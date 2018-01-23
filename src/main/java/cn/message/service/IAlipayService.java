@@ -1,5 +1,7 @@
 package cn.message.service;
 
+import com.alibaba.fastjson.JSONObject;
+
 import cn.message.bean.CardReceive;
 import cn.message.model.alipay.AlipayPostMessageModel;
 import cn.message.model.alipay.AlipayUserInfo;
@@ -38,8 +40,23 @@ public interface IAlipayService {
 	AlipayUserInfo callback4UserId(String code);
 	
 	/**
-	 * 领取电子驾驶证
+	 * 上传驾驶证正面照片
+	 * @param base64Img
 	 * @return
 	 */
-	BaseBean receiveJsCard();
+	BaseBean uploadJsCardImg(String base64Img); 
+	
+	/**
+	 * 上传行驶证正面照片
+	 * @param base64Img
+	 * @return
+	 */
+	BaseBean uploadXsCardImg(String base64Img); 
+	
+	/**
+	 * 发送证件信息到支付宝
+	 * @param bizContent
+	 * @return
+	 */
+	BaseBean sendCardInfo(String bizContent);
 }
