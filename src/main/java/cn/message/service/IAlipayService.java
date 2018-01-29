@@ -59,4 +59,13 @@ public interface IAlipayService {
 	 * @return
 	 */
 	BaseBean sendCardInfo(String bizContent);
+	
+	/**
+	 * 修改卡包状态
+	 * @param cardno 身份证
+	 * @param cardtype 卡类型
+	 * @param uid 支付宝唯一标识
+	 * @return
+	 */
+	boolean updateCardReceiveType(String cardno, String cardtype, String uid);
 }

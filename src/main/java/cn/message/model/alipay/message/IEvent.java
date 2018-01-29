@@ -10,4 +10,9 @@ public class IEvent {
 	 * 验证网关消息
 	 */
 	public static final String EVENT_TYPE_VERIFYGW = "verifygw";
+	
+	/**
+	 * 删除卡包消息
+	 */
+	public static final String EVENT_TYPE_NOTIFY = "notify";
 }
