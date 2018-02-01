@@ -85,6 +85,8 @@ public class AlipayServiceEnvConstants {
     public static final String appId = "1001884";
     
     
+    /**支付宝预发网关*/
+    public static final String ALIPAY_GATEWAY_PRE= "https://openapipre.alipay.com/gateway.do";
     /**支付宝卡包公钥*/
     public static final String CARD_PUBLIC_KEY   = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkG3desA/veyJ6/DDk2VCxD/UrdjsTDRSMalD+pc4T49z60u4TnZSoLM6UrdKAXQgOc/W+S80s6Y4tmgxPTvp80woBHBgG7yPt+6JT+eQe4LnpZtKMP4MtQMKPmwFYkPXmOm4O14zTkdNN2euZBIFDoOF7jzlst++Uwab+vcmeLFLu83gVRQG919awk1ZBb7l5H5dhplJm0gU5/CfMRtsJcojfrLVLbtw8SLbUbQDIlzwDm9riRrgLT9V17a7l2bSDERND6r+ARzY13i6cA1Qiso4g6mn7iVDcG4p5+D7ruJXzT8jLjqURL3GKEyUuKU+egmNB6l70t8r3ANuwF/GmwIDAQAB";
     
