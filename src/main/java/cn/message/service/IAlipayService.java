@@ -40,20 +40,6 @@ public interface IAlipayService {
 	AlipayUserInfo callback4UserId(String code);
 	
 	/**
-	 * 上传驾驶证正面照片
-	 * @param base64Img
-	 * @return
-	 */
-	BaseBean uploadJsCardImg(String base64Img); 
-	
-	/**
-	 * 上传行驶证正面照片
-	 * @param base64Img
-	 * @return
-	 */
-	BaseBean uploadXsCardImg(String base64Img); 
-	
-	/**
 	 * 发送证件信息到支付宝
 	 * @param bizContent
 	 * @return
