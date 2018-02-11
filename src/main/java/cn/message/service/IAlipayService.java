@@ -40,6 +40,13 @@ public interface IAlipayService {
 	AlipayUserInfo callback4UserId(String code);
 	
 	/**
+	 * 发送证件信息到支付宝（测试公众号）
+	 * @param bizContent
+	 * @return
+	 */
+	BaseBean sendCardInfoTest(String bizContent);
+	
+	/**
 	 * 发送证件信息到支付宝
 	 * @param bizContent
 	 * @return
