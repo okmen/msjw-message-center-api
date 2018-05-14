@@ -18,6 +18,15 @@ public class HmdahsJ1 {
 	private Integer state;
 	private Integer stateAlipay;
 	private Date createTime;
+	
+	private Integer stateMsjw;
+	
+	public Integer getStateMsjw() {
+		return stateMsjw;
+	}
+	public void setStateMsjw(Integer stateMsjw) {
+		this.stateMsjw = stateMsjw;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -99,7 +108,7 @@ public class HmdahsJ1 {
 	
 	public HmdahsJ1(String pch, String xh, String uId, String lxdh,
 			String jszhm, String hphm, String hpzl, String message,
-			String hslx, Date createTime,Integer state,Integer stateAlipay) {
+			String hslx, Date createTime,Integer state,Integer stateAlipay ,Integer stateMsjw) {
 		this.pch = pch;
 		this.xh = xh;
 		this.uId = uId;
@@ -112,11 +121,12 @@ public class HmdahsJ1 {
 		this.createTime = createTime;
 		this.state = state;
 		this.stateAlipay = stateAlipay;
+		this.stateMsjw = stateMsjw;
 	}
 	
 	public HmdahsJ1(Element pch, Element xh, Element uId, Element lxdh,
 			Element jszhm, Element hphm, Element hpzl, Element message,
-			Element hslx, Date createTime,Integer state,Integer stateAlipay) {
+			Element hslx, Date createTime,Integer state,Integer stateAlipay,Integer stateMsjw) {
 		if(null != pch) this.pch = pch.getText();
 		
 		if(null != xh) this.xh = xh.getText();
@@ -138,6 +148,7 @@ public class HmdahsJ1 {
 		this.createTime = createTime;
 		this.state = state;
 		this.stateAlipay = stateAlipay;
+		this.stateMsjw = stateMsjw;
 	}
 	
 	public HmdahsJ1(){}
@@ -147,6 +158,6 @@ public class HmdahsJ1 {
 				+ uId + ", lxdh=" + lxdh + ", jszhm=" + jszhm + ", hphm="
 				+ hphm + ", hpzl=" + hpzl + ", message=" + message + ", hslx="
 				+ hslx + ", state=" + state + ", stateAlipay=" + stateAlipay
-				+ ", createTime=" + createTime + "]";
+				+ ",stateMsjw = " + stateMsjw + ", createTime=" + createTime + "]";
 	}
 }

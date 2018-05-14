@@ -42,6 +42,12 @@ public interface ITemplateMessageService {
 	 * @throws Exception
 	 */
 	int sendMessageWechat4Timer() throws Exception;
+	/**
+	 * 发送hmdahs 表中的数据 微信
+	 * @return
+	 * @throws Exception
+	 */
+	int sendMessageMSJW4Timer() throws Exception;
 	
 	/**
 	 * 发送hmdahs 表中的数据 支付宝
